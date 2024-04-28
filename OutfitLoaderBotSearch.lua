@@ -1,7 +1,7 @@
 if game.PlaceId == 4984400432 then  
 end
 
-    local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/ejlol2/ejLibrary/main/Library.lua"))()
+    local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/ejlol2/ejLibrary/main/LibraryUpdate.lua"))()
     library.rank = "ej Outfit Loader v1.0"
     local Wm = library:Watermark("ej Outfit Loader v1.0")
     local FpsWm = Wm:AddWatermark("FPS: " .. library.fps)
@@ -44,6 +44,10 @@ end
                 warn("Currently botting searches for: ", username)
             end
         end    
+    end)
+
+    local Button3 = Tab2:NewButton("https://discord.gg/47AwBj5fUe - ej Hub Discord Server", function()
+    end)
     end)
 
     local Button3 = Tab2:NewButton("https://discord.gg/47AwBj5fUe - ej Hub Discord Server", function()
