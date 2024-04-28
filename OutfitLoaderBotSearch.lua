@@ -1,8 +1,7 @@
 if game.PlaceId == 4984400432 then  
 end
 
-
-    local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/ejlol2/UILibrary/main/NewBranding.lua"))()
+    local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/ejlol2/ejLibrary/main/Library.lua"))()
     library.rank = "ej Outfit Loader v1.0"
     local Wm = library:Watermark("ej Outfit Loader v1.0")
     local FpsWm = Wm:AddWatermark("FPS: " .. library.fps)
