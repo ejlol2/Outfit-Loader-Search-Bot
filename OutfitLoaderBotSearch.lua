@@ -3,7 +3,7 @@ end
 
     local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/ejlol2/ejLibrary/main/LibraryUpdatev4.lua"))()
     library.rank = "ej Outfit Loader v1.0"
-    local Wm = library:Watermark("ej Outfit Loader v1.0")
+    local Wm = library:Watermark("ej Outfit Loader v1.1")
     local FpsWm = Wm:AddWatermark("FPS: " .. library.fps)
     coroutine.wrap(function()
         while wait(.75) do
@@ -62,5 +62,5 @@ end
         vipAccess:Destroy()
     end)
 
-    local Button6 = Tab2:NewButton("https://discord.gg/47AwBj5fUe - ej Script Discord Server", function()
+    local Button6 = Tab2:NewButton("https://discord.gg/47AwBj5fUe - ej Scripts Discord Server", function()
     end)
