@@ -1,7 +1,7 @@
 if game.PlaceId == 4984400432 then  
 end
 
-    local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/ejlol2/ejLibrary/main/LibraryUpdate.lua"))()
+    local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/ejlol2/ejLibrary/main/LibraryUpdatev4.lua"))()
     library.rank = "ej Outfit Loader v1.0"
     local Wm = library:Watermark("ej Outfit Loader v1.0")
     local FpsWm = Wm:AddWatermark("FPS: " .. library.fps)
@@ -46,9 +46,21 @@ end
         end    
     end)
 
-    local Button3 = Tab2:NewButton("https://discord.gg/47AwBj5fUe - ej Hub Discord Server", function()
-    end)
+    local Button3 = Tab1:NewButton("Remove In-Game UI", function()
+        local searchBar = game:GetService("Players").LocalPlayer.PlayerGui.Menu.SearchBar
+        local shoppingCart = game:GetService("Players").LocalPlayer.PlayerGui.Menu.Saved
+        local saveOutfit = game:GetService("Players").LocalPlayer.PlayerGui.Menu.SaveOutfit
+        local sidePanels = game:GetService("Players").LocalPlayer.PlayerGui.Menu.LeftCluster
+        searchBar:Destroy()
+        shoppingCart:Destroy()
+        saveOutfit:Destroy()
+        sidePanels:Destroy()
     end)
 
-    local Button3 = Tab2:NewButton("https://discord.gg/47AwBj5fUe - ej Hub Discord Server", function()
+    local Button4 = Tab1:NewButton("VIP Room Access", function()
+        local vipAccess = workspace.VipRoom
+        vipAccess:Destroy()
+    end)
+
+    local Button6 = Tab2:NewButton("https://discord.gg/47AwBj5fUe - ej Script Discord Server", function()
     end)
